@@ -71,21 +71,11 @@ export default class HomeScreen extends React.Component {
     )
       .then((resp) => resp.json())
       .then((json) => {
-        console.log(json);
-        // ToastAndroid.showWithGravity(
-        //   "All Your Base Are Belong To Us",
-        //   ToastAndroid.SHORT,
-        //   ToastAndroid.CENTER
-        // );
+        console.log(json,"json");
         this.setState({visible: true})
       })
       .catch((error)=> {
-        console.log(error)
-        // ToastAndroid.showWithGravity(
-        //   error,
-        //   ToastAndroid.SHORT,
-        //   ToastAndroid.CENTER
-        // );
+        console.log(error,"error")
       })
   }
 
